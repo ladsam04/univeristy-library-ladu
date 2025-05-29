@@ -81,6 +81,7 @@ const FileUpload = ({
   };
 
   const onSuccess = (res: any) => {
+    console.log("Upload Success:", res);
     setFile(res);
     onFileChange(res.filePath);
 
