@@ -9,7 +9,7 @@ import React, { ReactNode } from 'react'
 
 const layout = async ({ children }: { children: ReactNode}) => {
   const session = await auth();
-      if (!session) redirect('/signin');
+      if (!session) redirect('/sign-in');
   // If the user is not authenticated, redirect them to the sign-in page.
 
   after(async () => {
